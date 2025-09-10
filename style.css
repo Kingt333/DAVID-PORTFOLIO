@@ -501,17 +501,20 @@ p {
 }
 
 .view-btn {
-  background: #6a00f4;
+  background: transparent;
+  border: #fff 1px solid;
   color: #fff;
   padding: 10px 18px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s ease;
+  border-radius: 2rem;
 }
 
 .view-btn:hover {
-  background: #9a40ff;
+  background: transparent;
+  border: #7b1fa2 1.5px solid;
 }
 
 /* Content section */
