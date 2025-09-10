@@ -464,7 +464,7 @@ p {
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
-  background-image: url(/img/file_00000000c0846246bf13543bd3acf437_conversation_id=67fcc849-8c64-800e-8040-3f8f7ac2a9e4&message_id=d4ba3c10-93a3-42ea-98a4-68cdbf909d03.PNG);
+
   background-size: cover;
   background-position: center;
 }
