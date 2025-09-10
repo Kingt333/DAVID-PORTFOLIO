@@ -7,6 +7,7 @@
 html, body {
   height: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 
@@ -36,6 +37,7 @@ nav.navbar {
   border-radius: 0 0 12px 12px; 
   z-index: 10000;
   transition: background 0.3s, box-shadow 0.3s;
+  position: fixed;
 }
 
 
@@ -568,6 +570,23 @@ p {
   margin: 0 auto; 
 }
 
+.about, .skills, .project {
+  min-height: auto; 
+  padding: 50px 20px;
+}
+
+.skill-box {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+.skill-box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
 
 /* Responsiveness */
 @media (max-width: 1024px) {
@@ -655,6 +674,7 @@ p {
 
  .skills-grid {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   #typewriter {
@@ -674,7 +694,7 @@ p {
 }
 
 .project-card {
-  width: 430px;
+  width: 400px;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
@@ -816,6 +836,12 @@ p {
   .info h3 {
     font-size: 1.1rem;
   }
+
+  nav .navbar {
+    padding: 0.7rem 1rem;
+    height: auto;
+    z-index: 10000000;
+  }
 }
 
 /* Skills section */
@@ -857,9 +883,10 @@ p {
     gap: 15px;
   }
   .project-card {
-    width: 98vw;
+    width: 90vw;
     min-width: 0;
     max-width: 100%;
+    margin: 0.6rem;
   }
   .project-image {
     height: 120px;
