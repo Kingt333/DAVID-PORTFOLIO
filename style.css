@@ -590,6 +590,25 @@ p {
   }
 }
 
+/* Desktop: show Spline viewer, hide fallback */
+.spline-fallback {
+  display: none;
+}
+
+/* Mobile: hide Spline, show fallback */
+@media (max-width: 768px) {
+  spline-viewer.robot {
+    display: none;
+  }
+  .spline-fallback {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 12px;
+  }
+}
+
 /* Typewriter cursor animation */
 
 @keyframes blincursor {
