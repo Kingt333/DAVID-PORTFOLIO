@@ -158,11 +158,11 @@ p {
   margin-top: 20px;
 }
 
-.btn {
-  background: linear-gradient(135deg, #6a0dad, #2c003e);
+.btn-container .btn {
+  background-color: #7b1fa2;
   color: #ffffff;
   border: none;
-  padding: 10px 20px;
+  padding: 7px 20px;
   border-radius: 26px;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
@@ -216,6 +216,12 @@ p {
 
 .btn-container {
   text-align: left;
+  width: 18rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+ position: absolute;
+ left: 5%;
 }
 
 
@@ -721,6 +727,66 @@ p {
     width: 100%;
     font-size: 0.95rem;
     padding: 10px 0;
+  }
+}
+
+/* Home section mobile responsiveness */
+@media (max-width: 600px) {
+  .home {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    min-height: 80vh;
+    padding: 30px 5px 10px 5px;
+    text-align: center;
+  }
+
+  .home spline-viewer,
+  .spline-fallback {
+    position: static;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto 20px auto;
+    z-index: 1;
+  }
+
+  #typewriter {
+    position: static;
+    font-size: 1.5rem;
+    margin: 30px auto 10px auto;
+    left: unset;
+    top: unset;
+    width: 100%;
+    text-align: center;
+  }
+
+  .home p {
+    position: static;
+    font-size: 1rem;
+    margin: 10px auto 20px auto;
+    color: white;
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn-container {
+    position: static;
+    left: unset;
+    transform: unset;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto 0 auto;
+    width: 100%;
+  }
+
+  .btn, .btn1 {
+    width: 90%;
+    min-width: 120px;
+    font-size: 1rem;
+    margin: 0 auto;
   }
 }
 
